@@ -141,12 +141,6 @@ PY
 - Em nuvem (Databricks/EMR), reutilize notebooks e modulos alterando apenas caminhos em `config.py`.
 - Para reprocessar, rode Bronze -> Silver -> Gold; as escritas sao overwrite por padrao.
 
-## Artefatos principais
-
-- Parquet: `data/bronze/dados_brutos.parquet`, `data/silver/dados_limpos.parquet`, `data/gold/*.parquet`
-- Codigo: `arquivo_base_silver.py`, `spark_jobs/config.py`, `spark_jobs/spark_session_manager.py`
-- Notebooks: `notebooks/*_spark.ipynb`, `notebooks/analysis/*_spark.ipynb`
-
 
 ## Problemas para conseguir a kaggle key?
 
