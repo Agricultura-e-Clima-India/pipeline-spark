@@ -1,0 +1,9 @@
+database/.env
+data/
+.venv/
+reports/
+.qodo/
+.vscode/
+.ipynb_checkpoints/
+notebooks/.ipynb_checkpoints/
+notebooks/analysis/.ipynb_checkpoints/
