@@ -77,25 +77,29 @@ Use a imagem `jupyter/pyspark-notebook`:
   ```
 - Com Kaggle montado (PowerShell):
 
-  `docker run --rm -it -p 8888:8888 `
-  `  -v ${PWD}:/home/jovyan/work `
-  `  -v ${HOME}\\.kaggle:/home/jovyan/.kaggle `
-  `  jupyter/pyspark-notebook:latest`
+```
+  docker run --rm -it -p 8888:8888 
+    -v ${PWD}:/home/jovyan/work 
+    -v ${HOME}\\.kaggle:/home/jovyan/.kaggle 
+    jupyter/pyspark-notebook:latest
+```
 
 - Com Kaggle montado (Linux/macOS):
 
-`docker run --rm -it -p 8888:8888 \`
-`  -v $(pwd):/home/jovyan/work \`
-`  -v ${HOME}/.kaggle:/home/jovyan/.kaggle \`
-`  jupyter/pyspark-notebook:latest`
+```
+docker run --rm -it -p 8888:8888 \
+  -v $(pwd):/home/jovyan/work \
+  -v ${HOME}/.kaggle:/home/jovyan/.kaggle \
+  jupyter/pyspark-notebook:latest
+```
 
 Depois de rodar o comando, o terminal mostra uma URL com token (ex.: `http://127.0.0.1:8888/?token=...`). Copie essa URL e cole no navegador. Os notebooks estao na pasta `work/` (que e o seu repo). Se precisar instalar dependencias extras dentro do container:
 
-
-`docker ps          # pega o CONTAINER ID`
-`docker exec -it CONTAINER_ID bash`
-`pip install -r /home/jovyan/work/requirements.txt`
-
+```
+docker ps          # pega o CONTAINER ID
+docker exec -it CONTAINER_ID bash
+pip install -r /home/jovyan/work/requirements.txt
+```
 
 Em seguida, rode os notebooks na ordem dentro do Jupyter:
 - `00_setup_spark_parquet.ipynb` (valida ambiente, permite criar kaggle.json preenchendo username/key; recomendado começar por ele)
