@@ -142,6 +142,6 @@ PY
 
 ## Problemas para conseguir a kaggle key?
 
-* - Faça login no kaggle*
-* - Acesse o link:* `https://www.kaggle.com/settings`
-* - Procure por:* ***Legacy API Credentials***
+- Faça login no kaggle
+- Acesse o link: `https://www.kaggle.com/settings`
+- Procure por: Legacy API Credentials
