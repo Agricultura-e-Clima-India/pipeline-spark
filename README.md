@@ -1,7 +1,5 @@
 # Pipeline de Dados (Spark) - Sistema de Recomendação Agrícola Inteligente
 
-Guia didatico (projeto universitario) para executar o pipeline Spark com Parquet em todas as camadas. Mantemos tudo simples, com carinho: passo a passo local, alternativa via Docker e notas de personalizacao.
-
 ## Visao geral
 
 - **Bronze (`data/bronze/dados_brutos.parquet`)**: une producao, chuva e temperatura; renomeia colunas climaticas ambiguas; adiciona `data_ingestao`.
