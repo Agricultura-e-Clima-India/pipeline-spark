@@ -126,12 +126,6 @@ spark.stop()
 PY
 ```
 
-## Personalizacao
-
-- Caminhos: ajuste `PIPELINE_HOME` ou edite `spark_jobs/config.py`.
-- Outliers: altere a lista em `arquivo_base_silver.py` (padrao: `PRODUCTION`, `AREA`, `YIELD`).
-- Paralelismo Spark: ajuste em `spark_jobs/spark_session_manager.py` (ex.: `spark.sql.shuffle.partitions`).
-
 ## Dicas
 
 - Ative a venv antes de abrir notebooks locais.
